@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//segment tree for sum of particular segment
 const int N=1e5+2;
 int a[N],tree[4*N];
 
@@ -39,7 +39,7 @@ int main(){
 	// 	cout<<tree[i]<<endl;
 	while(1) {
 		int type;
-		cin>>type;//1 for query ,2 for update
+		cin>>type;//1 for query
 		if(type==-1)
 			break;
 		if(type==1)
