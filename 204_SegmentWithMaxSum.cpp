@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 #define int long long
 const int N = 1e5+2, MOD = 1e9+7;
@@ -35,34 +35,6 @@ void build(int node, int st, int en)
 
 }
 
-// pair<int,int> query(int node, int st, int en, int l, int r)
-// {
-//     if(st>r || en<l)
-//       return {MOD, -1};
-
-//     if(l<=st && en<=r)
-//       return tree[node];
-
-//     int mid = (st+en)/2;
-
-//     pair<int,int> q1 = query(2*node, st, mid, l, r);
-//     pair<int,int> q2 = query(2*node+1, mid+1, en, l, r);
-//     pair<int,int> q;
-//     if(q1.first < q2.first){
-//         q.first = q1.first;
-//         q.second = q1.second;
-//     }
-//     else if(q2.first < q1.first){
-//         q.first = q2.first;
-//         q.second = q2.second;
-//     }
-//     else{
-//         q.first = q1.first;
-//         q.second = q1.second + q2.second;
-//     }
-
-//     return q;
-// }
 
 void update(int node, int st, int en, int idx, int val){
 	if(st == en) {

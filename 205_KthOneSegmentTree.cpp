@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 #define int long long
 const int N = 1e5+2, MOD = 1e9+7;
@@ -19,6 +19,7 @@ void build(int node, int st, int en)
 	tree[node] = tree[2*node] + tree[2*node+1];
 }
 
+//descending the segment tree
 int kthOne(int node, int st, int en, int k){
 	if(st == en) {
 		return st;
